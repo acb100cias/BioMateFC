@@ -10,8 +10,8 @@ dispuesto a aprender.
 
 # Temario
 1. Dinámica de poblaciones.
-  1. Modelos de crecimiento y catástrofes.
-  1. Ecología de poblaciones.
-  1. Modelos tipo Lotka-Volterra. Dinámicas de interacción marital.
-  1. Modelación basada en Agentes I. ¿Por qué nos interesa la interacción?
-  1. Modelos de “parches”.
+    1. Modelos de crecimiento y catástrofes.
+    1. Ecología de poblaciones.
+    1. Modelos tipo Lotka-Volterra. Dinámicas de interacción marital.
+    1. Modelación basada en Agentes I. ¿Por qué nos interesa la interacción?
+    1. Modelos de “parches”.
