@@ -1,5 +1,5 @@
 # Biología Matemática I
-## Augusto Cabrera y Ulises Rayón
+#### Augusto Cabrera y Ulises Rayón
 
 En este curso estudiaremos algunos fenómenos biológicos desde el punto de vista matemático, aunque haremos énfasis en los métodos, nos interesa que estos métodos correspondan al contexto biológico del problema. El enfoque del curso no es, simplemente hacer una extensión de los cursos de ecuaciones diferenciales, sino más bien hacer una introducción al estudio de la biología teórica.
 
