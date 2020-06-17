@@ -13,5 +13,25 @@ dispuesto a aprender.
     1. Modelos de crecimiento y catástrofes.
     1. Ecología de poblaciones.
     1. Modelos tipo Lotka-Volterra. Dinámicas de interacción marital.
-    1. Modelación basada en Agentes I. ¿Por qué nos interesa la interacción?
+    1. Modelación basada en Agentes I. _¿Por qué nos interesa la interacción?_
     1. Modelos de “parches”.
+
+1. Epidemiología matemática
+    1. Estructura matématica de las epidemias.
+    1. Modelos humano-humano y redes de contacto.
+    1. Introducción a la epidemiología in-silico:
+        * _Autómatas Celulares_,
+        * _Modelación basada en agentes II_
+        * _Ambientes basados en redes_.
+
+1. Introducción a la biología de sistemas
+    1. La forma de las cosas
+        1. Geometría fractal en la naturaleza.
+        1. Mecánimos de Turing
+        1. Morfógensis
+        1. Biología del desarrollo
+    1. Redes de regulación génica
+        * E.Coli y Fago λ
+        * Diferenciación de celulas del CNS como un modelo discreto
+        * Transiciones epitelio-mesenquimales y estabilidad de estados sanos y cancerígenos.
+    1. Introducción a enfermedades complejas y bioinformática.
