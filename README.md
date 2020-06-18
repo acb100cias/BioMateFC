@@ -1,5 +1,5 @@
 # Biología Matemática I
-#### Augusto Cabrera y Ulises Rayón
+#### Augusto Cabrera-Becerril y Ulises Rayón
 
 ![](https://media.giphy.com/media/d7SnByEMkrdeoVQ2lT/giphy.gif)
 
