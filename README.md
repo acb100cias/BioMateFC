@@ -10,7 +10,7 @@ Partiremos del fenómeno biológico y utilizaremos las herramientas matemáticas
 En este curso trataremos de utilizar varias herramientas. Esto implica que además de las herramientas clásicas del análisis matemático usaremos extensivamente la modelación computacional, como un acercamiento al entendimiento de algunos sistemas biológicos. No es indispensable saber programar, pero si lo es estar
 dispuesto a aprender.
 
-# Temario
+# Temario I
 1. Dinámica de poblaciones.
     1. Modelos de crecimiento y catástrofes.
     1. Ecología de poblaciones.
