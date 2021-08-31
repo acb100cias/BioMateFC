@@ -1,4 +1,4 @@
-# Biología Matemática I
+# Biología Matemática 
 #### Augusto Cabrera-Becerril y Ulises Rayón
 
 ![](https://media.giphy.com/media/d7SnByEMkrdeoVQ2lT/giphy.gif)
@@ -10,7 +10,7 @@ Partiremos del fenómeno biológico y utilizaremos las herramientas matemáticas
 En este curso trataremos de utilizar varias herramientas. Esto implica que además de las herramientas clásicas del análisis matemático usaremos extensivamente la modelación computacional, como un acercamiento al entendimiento de algunos sistemas biológicos. No es indispensable saber programar, pero si lo es estar
 dispuesto a aprender.
 
-# Temario
+# Temario I
 1. Dinámica de poblaciones.
     1. Modelos de crecimiento y catástrofes.
     1. Ecología de poblaciones.
@@ -37,3 +37,27 @@ dispuesto a aprender.
         * Diferenciación de celulas del CNS como un modelo discreto
         * Transiciones epitelio-mesenquimales y estabilidad de estados sanos y cancerígenos.
     1. Introducción a enfermedades complejas y bioinformática.
+
+# Temario II
+1. Sistemas excitables en biología.
+    1. Células excitables
+    2. El corazón.
+    3. El cerebro.
+
+2. Sincronización en sistemas biológicos.
+    1.Ciclos circadianos y relojes biológicos.
+    2.Sincronización en redes biológicas.
+    3.Sincronización y epidemias.
+
+3. Emergencia de patrones en fisiología
+    1.Quimiotaxis y curación de heridas
+    2.Ondas tipo "chocorrol" en medios excitables
+    3.Fractalidad de los tejidos vivos
+
+4. Introducción a la modelación de enfermedades complejas
+    1. Diabetes.
+    2. Cancer, emperador de todos los males.
+    3. El sistema inmune. Inmunodeficiencia y enfermedades autoinmunes.
+
+
+    
