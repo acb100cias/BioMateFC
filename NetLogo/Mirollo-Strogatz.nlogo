@@ -1,10 +1,16 @@
-turtles-own[reloj umbral nivel-reset ventana]
+turtles-own[reloj
+  umbral
+  nivel-reset
+  ventana
+]
+
 to setup
   clear-all
-  crt N[setxy random-xcor random-ycor
-  set shape "bug"
-  set reloj random(round ciclo)
-  set umbral flash
+  create-turtles N[
+  setxy random-xcor random-ycor
+  set shape "butterfly"
+  set reloj random (round ciclo )
+  set umbral  duracion
   set nivel-reset umbral
   set ventana -1
   set size 2
@@ -13,18 +19,16 @@ to setup
   reset-ticks
 end
 
-to colorea
-  ifelse (reloj < umbral)[set color yellow ][set color gray - 4]
+to go
+  ask turtles [mueve incrementa-reloj
+    if ((reloj > ventana) and (reloj >= umbral))[busca]
+  ]
+  ask turtles[colorea]
+  tick
 end
 
-to go
-  ask turtles [
-  mueve
-  avanza-reloj
-    if (reloj > ventana) and (reloj >= umbral)[busca]
-  ]
-  ask turtles [colorea]
-  tick
+to colorea
+  ifelse reloj < umbral[set color yellow][set color gray - 2]
 end
 
 to mueve
@@ -32,22 +36,24 @@ to mueve
   fd 1
 end
 
-to busca
-  if count turtles in-radius 1 with [color = yellow] >= umbral2 [set reloj nivel-reset]
+to incrementa-reloj
+  set reloj (reloj + 1)
+  if reloj = ciclo[set reloj 0]
 end
 
-to avanza-reloj
-  set reloj (reloj + 1) if reloj = ciclo [set reloj 0]
+to busca
+  if count turtles in-radius 1 with [color = yellow] >= F
+  [set reloj nivel-reset]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-355
-31
-1067
-744
+210
+10
+723
+524
 -1
 -1
-3.5025
+15.303030303030303
 1
 10
 1
@@ -57,21 +63,21 @@ GRAPHICS-WINDOW
 1
 1
 1
--100
-100
--100
-100
-1
-1
+-16
+16
+-16
+16
+0
+0
 1
 ticks
 30.0
 
 BUTTON
-121
-125
-194
-158
+66
+49
+139
+82
 NIL
 setup
 NIL
@@ -85,10 +91,10 @@ NIL
 1
 
 BUTTON
+67
+120
 130
-179
-193
-212
+153
 NIL
 go
 T
@@ -102,71 +108,71 @@ NIL
 1
 
 SLIDER
-30
-42
-355
-75
+23
+187
+195
+220
 N
 N
 0
 2000
-1510.0
+446.0
 1
 1
 NIL
 HORIZONTAL
 
 SLIDER
-91
-294
-263
-327
+6
+251
+178
+284
+duracion
+duracion
+0
+10
+10.0
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+17
+326
+189
+359
 ciclo
 ciclo
 0
 100
-73.0
+90.0
 1
 1
 NIL
 HORIZONTAL
 
 SLIDER
-103
-362
-275
-395
-flash
-flash
+25
+412
+197
+445
+f
+f
 0
 10
-4.0
-1
-1
-NIL
-HORIZONTAL
-
-SLIDER
-96
-419
-268
-452
-umbral2
-umbral2
-0
-3
-3.0
+1.0
 1
 1
 NIL
 HORIZONTAL
 
 PLOT
-1097
-188
-1700
-663
-Osciladores Encendidos
+878
+162
+1078
+312
+bichos
 Tiempo
 Número
 0.0
@@ -175,9 +181,9 @@ Número
 2000.0
 true
 false
-"" ""
+"set-plot-range 0 N" ""
 PENS
-"default" 1.0 0 -10141563 true "" "plot count turtles with [color = yellow]"
+"default" 1.0 0 -16777216 true "" "plot count turtles with [color = yellow]"
 
 @#$#@#$#@
 ## WHAT IS IT?
@@ -521,7 +527,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.3.0
+NetLogo 6.4.0
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
