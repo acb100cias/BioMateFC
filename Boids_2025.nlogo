@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<model version="NetLogo 7.0.0-beta0" snapToGrid="false">
-  <code><![CDATA[turtles-own[vecinos vecino-cercano]
+turtles-own[vecinos vecino-cercano]
 
 to setup
   clear-all
