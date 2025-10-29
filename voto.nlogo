@@ -11,26 +11,40 @@ to colorea
 end
 
 to go
+  let cambio? false
   ask patches [set votoVecino sum[voto] of neighbors]
   ask patches[ let previo voto
     if votoVecino > 5 [set voto 1]
     if votoVecino < 3 [set voto 0]
+    if votoVecino = 4 [
+      if empate? [set voto 1 - voto]
+    ]
+    if votoVecino = 5[
+      ifelse adelantado? [set voto 0][set voto 1]
+    ]
+    if votoVecino = 3[
+      ifelse adelantado? [set voto 1][set voto 0]
+         ]
+
+    if voto != previo
+    [set cambio? true]
    colorea
 
   ]
+  if not cambio? [stop]
   tick
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
 210
 10
-728
-529
+823
+624
 -1
 -1
-15.455
+6.0
 1
-10
+4
 1
 1
 1
@@ -38,10 +52,10 @@ GRAPHICS-WINDOW
 1
 1
 1
--16
-16
--16
-16
+-50
+50
+-50
+50
 1
 1
 1
@@ -82,20 +96,27 @@ NIL
 NIL
 1
 
-SLIDER
-27
-209
-199
-242
-D
-D
+SWITCH
+44
+247
+168
+280
+empate?
+empate?
+1
+1
+-1000
+
+SWITCH
+31
+311
+178
+344
+adelantado?
+adelantado?
 0
-100
-25.0
 1
-1
-NIL
-HORIZONTAL
+-1000
 
 @#$#@#$#@
 ## WHAT IS IT?
